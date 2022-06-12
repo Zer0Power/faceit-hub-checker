@@ -29,7 +29,7 @@ app.get('/CheckPlayer',(req,res) =>{
         const config = {
             method: 'get',
             url: `https://open.faceit.com/data/v4/players?game=csgo&game_player_id=${playerid}`,
-            headers: {'Authorization': 'Bearer 390bc3bc-24a3-4aa8-8c92-5005ca3fc638'}
+            headers: {'Authorization': 'Bearer 390bc3bc-24a3-4aa8-8c92-5005ca3fc638'}//Replace with ur api key
         }
         let faceitdata = await axios(config).catch((reason)=> {
             if (reason.response.status === 400) {
@@ -52,7 +52,7 @@ app.get('/CheckPlayer',(req,res) =>{
         const config = {
             method: 'get',
             url: `https://open.faceit.com/data/v4/players/${faceitid}/hubs?offset=0&limit=20`,
-            headers: {'Authorization': 'Bearer 390bc3bc-24a3-4aa8-8c92-5005ca3fc638'}
+            headers: {'Authorization': 'Bearer 390bc3bc-24a3-4aa8-8c92-5005ca3fc638'}//Replace with ur api key
         }
         let playerhubs = await axios(config)
         return JSON.stringify(playerhubs.data.items)
@@ -64,7 +64,7 @@ app.get('/CheckPlayer',(req,res) =>{
         const hubs = await GetPlayerHubs()
         if(!hubs){return}
         const playerdata = await GetFaceitID() 
-        if(hubs.includes("998b6d53-57ab-4f8e-988c-319a72b1b557")){
+        if(hubs.includes("998b6d53-57ab-4f8e-988c-319a72b1b557")){//Replace with ur hubid
             res.status(200).json({Status:"Player Found",Player:playerdata.nickname,Steam:playerdata.platforms.steam,Steamid:playerdata.steam_id_64})
         }else{
             res.status(400).json({Status:"Player Not Found"})
