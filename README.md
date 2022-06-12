@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Zer0Power/faceit-hub-checker">
-    <img src="images/logo.jpg" alt="Logo" width="200" height="200">
+    <img src="images/avatar.jpg" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Faceit Hub Checker</h3>
