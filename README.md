@@ -8,7 +8,7 @@
   <h3 align="center">Faceit Hub Checker</h3>
 
   <p align="center">
-    Simple faceit Hub Checket built That Check a Costume Hhb with js 
+    Simple faceit Hub Checket built That Check a Costume Hub with js 
     <br />
     <a href="https://github.com/Zer0Power/faceit-hub-checker"><strong>Explore the docs »</strong></a>
     <br />
