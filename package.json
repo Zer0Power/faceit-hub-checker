@@ -1,0 +1,19 @@
+{
+  "name": "faceit-hub-checker",
+  "version": "1.0.0",
+  "description": "Faceit Player's hub Cheker",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zer0Power/faceit-hub-checker.git"
+  },
+  "author": "Zer0Power",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zer0Power/faceit-hub-checker/issues"
+  },
+  "homepage": "https://github.com/Zer0Power/faceit-hub-checker#readme"
+}
